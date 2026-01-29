@@ -19,7 +19,7 @@ brew "<formula>"
 
 ## Available Packages
 
-_No packages published yet._
+- **md2adf** - CLI tool to convert Markdown to Atlassian Document Format (ADF)
 
 ## Documentation
 
