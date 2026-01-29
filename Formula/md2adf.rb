@@ -1,28 +1,28 @@
 class Md2adf < Formula
   desc "CLI tool to convert Markdown to Atlassian Document Format (ADF)"
   homepage "https://github.com/ajbeck/md2adf"
-  version "1.0.0"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ajbeck/md2adf/releases/download/v1.0.0/md2adf-darwin-arm64.gz"
-      sha256 "d1aae19a0d874d2aa24a5ab772807afd42bc9844611f55197f2a3b33b8672765"
+      url "https://github.com/ajbeck/md2adf/releases/download/v1.1.0/md2adf-darwin-arm64.gz"
+      sha256 "0ccff65d4b5abddc2e22f2b1636a751395fb61e124f8d0fbed0761c4ee1be6cd"
     end
     on_intel do
-      url "https://github.com/ajbeck/md2adf/releases/download/v1.0.0/md2adf-darwin-amd64.gz"
-      sha256 "5719d102db217537bc49a16f5258d70e3c13b821fb9894d4b6161faa5a122d9c"
+      url "https://github.com/ajbeck/md2adf/releases/download/v1.1.0/md2adf-darwin-amd64.gz"
+      sha256 "49987269cb954b66763453349b5df7ed325e8c8bff807de1cbb9792f2633a6cf"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ajbeck/md2adf/releases/download/v1.0.0/md2adf-linux-arm64.gz"
-      sha256 "9efdc8dd21617dafd6cedc08771afd464988ac28f64b2985e0bffe67dd88751f"
+      url "https://github.com/ajbeck/md2adf/releases/download/v1.1.0/md2adf-linux-arm64.gz"
+      sha256 "26e683a9fc1cceab336162197413b2d3684d93fb47d2b3c8a7a71fd7d32fdec6"
     end
     on_intel do
-      url "https://github.com/ajbeck/md2adf/releases/download/v1.0.0/md2adf-linux-amd64.gz"
-      sha256 "e69fd49b594dfbfb740bc6e9c8c849c67f07f50e95f58d93b142baa7b6506404"
+      url "https://github.com/ajbeck/md2adf/releases/download/v1.1.0/md2adf-linux-amd64.gz"
+      sha256 "ba9756864eb0d6e9267ff55240ef296a377cacbe6ba5339e19592069842eca96"
     end
   end
 
@@ -33,8 +33,8 @@ class Md2adf < Formula
   end
 
   test do
-    # Verify the binary runs and reports correct version
-    output = shell_output("#{bin}/md2adf version")
-    assert_match "v#{version}", output
+    # Verify the binary runs and converts markdown to ADF
+    output = shell_output("#{bin}/md2adf -s '# Hello'")
+    assert_match "heading", output
   end
 end
