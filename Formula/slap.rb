@@ -1,28 +1,28 @@
 class Slap < Formula
   desc "CLI tool that wraps commands and streams their output to Slack in real-time"
   homepage "https://github.com/ajbeck/slack-stdout-pipe"
-  version "0.2.0"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ajbeck/slack-stdout-pipe/releases/download/v0.2.0/slap-darwin-arm64.tar.gz"
-      sha256 "f2edbddc390ed69dcc247bd009fc6f219f37090da9328158ef630dc23f38045f"
+      url "https://github.com/ajbeck/slack-stdout-pipe/releases/download/v0.3.0/slap-darwin-arm64.tar.gz"
+      sha256 "a1d5e9512689661e03f8ced52fcc2177ff8b5e94d2414cc08fc4086f4646b871"
     end
     on_intel do
-      url "https://github.com/ajbeck/slack-stdout-pipe/releases/download/v0.2.0/slap-darwin-amd64.tar.gz"
-      sha256 "cbe3a8392f8b1a72e7a696a8882e78f39cc54fb5b0bdd68fe6f2d8ae53569b83"
+      url "https://github.com/ajbeck/slack-stdout-pipe/releases/download/v0.3.0/slap-darwin-amd64.tar.gz"
+      sha256 "599b95c4da8d6511402c1ef528fefa962149921c7ac36ead56a6f51f0012c178"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ajbeck/slack-stdout-pipe/releases/download/v0.2.0/slap-linux-arm64.tar.gz"
-      sha256 "6ff4d182357587bdeae245681a9522f4330b63ae28c28f381a23a364a307cd5b"
+      url "https://github.com/ajbeck/slack-stdout-pipe/releases/download/v0.3.0/slap-linux-arm64.tar.gz"
+      sha256 "837ac9c0b2d9d78e57407b918c3c39826d40d8c2b476d5fbaefede68c2dcf2c0"
     end
     on_intel do
-      url "https://github.com/ajbeck/slack-stdout-pipe/releases/download/v0.2.0/slap-linux-amd64.tar.gz"
-      sha256 "7c7a31bf4c69977fd8c1dc83eb0ef68f4713a57559a1f9d4263793b28bbd5610"
+      url "https://github.com/ajbeck/slack-stdout-pipe/releases/download/v0.3.0/slap-linux-amd64.tar.gz"
+      sha256 "f7e8b92f366f9510d7417281a12a6f28e22b79c4d18725eb20de9b70a8061894"
     end
   end
 
