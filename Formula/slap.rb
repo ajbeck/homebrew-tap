@@ -32,6 +32,6 @@ class Slap < Formula
 
   test do
     ENV["SLAP_BLOCK"] = "bingo"
-    assert_match version.to_s, shell_output("#{bin}/slap --version")
+    assert_match version.to_s, shell_output("#{bin}/slap")
   end
 end
