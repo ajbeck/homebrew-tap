@@ -20,6 +20,7 @@ brew "<formula>"
 ## Available Packages
 
 - **md2adf** - CLI tool to convert Markdown to Atlassian Document Format (ADF)
+- **scut** - CLI toolkit for LLM agents, Claude Code hooks, status lines, and formatting
 
 ## Documentation
 
