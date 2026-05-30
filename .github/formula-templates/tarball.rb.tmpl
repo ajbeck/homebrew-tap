@@ -1,0 +1,36 @@
+class {{ .ClassName }} < Formula
+  desc {{ quote .Description }}
+  homepage {{ quote .Homepage }}
+  version {{ quote .Version }}
+  license {{ quote .License }}
+
+  on_macos do
+    on_arm do
+      url {{ quote .DarwinARM64.URL }}
+      sha256 {{ quote .DarwinARM64.SHA256 }}
+    end
+    on_intel do
+      url {{ quote .DarwinAMD64.URL }}
+      sha256 {{ quote .DarwinAMD64.SHA256 }}
+    end
+  end
+
+  on_linux do
+    on_arm do
+      url {{ quote .LinuxARM64.URL }}
+      sha256 {{ quote .LinuxARM64.SHA256 }}
+    end
+    on_intel do
+      url {{ quote .LinuxAMD64.URL }}
+      sha256 {{ quote .LinuxAMD64.SHA256 }}
+    end
+  end
+
+  def install
+{{ indent 4 .Install }}
+  end
+
+  test do
+{{ indent 4 .Test }}
+  end
+end
