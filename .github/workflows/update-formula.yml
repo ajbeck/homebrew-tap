@@ -42,9 +42,11 @@ jobs:
           safe_version="${version#v}"
           branch="update-${formula}-${safe_version}"
 
-          echo "formula=$formula" >> "$GITHUB_OUTPUT"
-          echo "version=$version" >> "$GITHUB_OUTPUT"
-          echo "branch=$branch" >> "$GITHUB_OUTPUT"
+          {
+            echo "formula=$formula"
+            echo "version=$version"
+            echo "branch=$branch"
+          } >> "$GITHUB_OUTPUT"
 
       - name: Check out tap
         uses: actions/checkout@v4
