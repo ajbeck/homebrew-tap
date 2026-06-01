@@ -1,28 +1,28 @@
 class Scut < Formula
   desc "CLI toolkit for LLM agents, Claude Code hooks, status lines, and formatting"
   homepage "https://github.com/ajbeck/scut"
-  version "0.3.2"
+  version "0.3.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/ajbeck/scut/releases/download/v0.3.2/scut-v0.3.2-darwin-arm64.tar.gz"
-      sha256 "e156e9d49694f5ced2701a0d24e6d4b6082c008e5cef9b14106ce98f6349aba3"
+      url "https://github.com/ajbeck/scut/releases/download/v0.3.3/scut-v0.3.3-darwin-arm64.tar.gz"
+      sha256 "3b37cdf60d31c36100a95c187dd55c42bc36771b0a70b9c7e2230ec5fa18624a"
     end
     on_intel do
-      url "https://github.com/ajbeck/scut/releases/download/v0.3.2/scut-v0.3.2-darwin-amd64.tar.gz"
-      sha256 "b3d7224d52ab1d1d2c42736d5c1aab3f15fc6cba30210243eb5f28b1fcd0e4da"
+      url "https://github.com/ajbeck/scut/releases/download/v0.3.3/scut-v0.3.3-darwin-amd64.tar.gz"
+      sha256 "5c2b1dcdb511ff15a2e855448f9ce9a72e92e0a9aafbcd45d666b95678e40ada"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/ajbeck/scut/releases/download/v0.3.2/scut-v0.3.2-linux-arm64.tar.gz"
-      sha256 "b55763fc732828861fb718d377134b5cb93492ad7ba533d64c57357e5cd64665"
+      url "https://github.com/ajbeck/scut/releases/download/v0.3.3/scut-v0.3.3-linux-arm64.tar.gz"
+      sha256 "e0d9b9aded949ce12b097b6b5d4ddd3a63bc19d4a4726bdcb3e289128d593f39"
     end
     on_intel do
-      url "https://github.com/ajbeck/scut/releases/download/v0.3.2/scut-v0.3.2-linux-amd64.tar.gz"
-      sha256 "8106f9b105973ad8697a76b08e94a82eb29234b0dfd2590f9daa08f1ff3e9432"
+      url "https://github.com/ajbeck/scut/releases/download/v0.3.3/scut-v0.3.3-linux-amd64.tar.gz"
+      sha256 "35861fc659a78a89736e32fa30c1292f5d4fc85dd087374321ad0d2cec3b3d9f"
     end
   end
 
